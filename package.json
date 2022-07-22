@@ -2,10 +2,27 @@
   "name": "dancarlyon-twitch-sdk",
   "version": "0.0.1",
   "description": "NodeJS Twitch SDK, interaction with the Twitch API",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DanCarlyon/dancarlyon-twitch-sdk.git"
   },
   "author": "DanCarlyon",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanCarlyon/dancarlyon-twitch-sdk/issues"
+  },
+  "files": ["lib/**/*"],
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4"
+  }
 }
