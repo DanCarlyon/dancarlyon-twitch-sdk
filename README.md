@@ -1,1 +1,1 @@
-# DanC Twitch SDK
+# DanCarlyon Twitch SDK
